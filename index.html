@@ -13,7 +13,6 @@
 <body class="bg-slate-100">
 
     <div id="app">
-        <!-- Login Screen -->
         <div id="login-screen" class="flex items-center justify-center min-h-screen">
             <div class="w-full max-w-sm p-8 space-y-8 bg-white shadow-2xl rounded-2xl">
                 <div class="text-center">
@@ -37,7 +36,6 @@
             </div>
         </div>
 
-        <!-- Main Application (Hidden by default) -->
         <div id="main-app" class="hidden">
             <header class="bg-white shadow-md sticky top-0 z-40">
                 <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
@@ -61,18 +59,13 @@
             </header>
 
             <main class="p-4 md:p-8">
-                <!-- CSM Dashboard -->
                 <div id="csm-dashboard" class="hidden container mx-auto"></div>
-                <!-- Trainer Dashboard -->
                 <div id="trainer-dashboard" class="hidden container mx-auto"></div>
-                <!-- Lead Dashboard -->
                 <div id="lead-dashboard" class="hidden container mx-auto"></div>
-                <!-- Admin Dashboard -->
                 <div id="admin-dashboard" class="hidden container mx-auto"></div>
             </main>
         </div>
 
-        <!-- Modals (Hidden by default) -->
         <div id="request-resource-modal" class="modal-backdrop"></div>
         <div id="reassign-modal" class="modal-backdrop"></div>
         <div id="account-details-modal" class="modal-backdrop"></div>
@@ -81,12 +74,10 @@
         <div id="change-password-modal" class="modal-backdrop"></div>
         <div id="add-user-modal" class="modal-backdrop"></div>
         
-        <!-- Notification Area -->
         <div id="notification-container" class="fixed top-5 right-5 z-[100]"></div>
 
     </div>
 
-    <!-- Main application script -->
     <script type="module" src="script.js"></script>
 </body>
 </html>
