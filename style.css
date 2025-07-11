@@ -12,3 +12,27 @@ body {
 .animate-fade-in-out {
   animation: fade-in-out 5s ease-in-out forwards;
 }
+
+/* Base modal backdrop styling */
+.modal-backdrop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    padding: 1rem;
+}
+
+/* Hide all modals initially */
+#request-resource-modal,
+#reassign-modal,
+#account-details-modal,
+#add-users-modal,
+#session-mom-modal,
+#change-password-modal,
+#add-user-modal {
+    display: none;
+}
